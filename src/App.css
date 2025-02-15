@@ -1,38 +1,94 @@
-.App {
+/* Set the entire page background to light aquamarine */
+body {
+  background-color: #ffff00;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Main container for the app */
+.app-container {
   text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 700px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Styling for the logo */
+.logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Styling for the title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* Subtitle for additional information */
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+/* Container for input and button */
+.input-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Styling for the input field */
+.query-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Styling for the submit button */
+.submit-btn {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #089b8f70;
+  color: rgb(24, 19, 19);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+
+.submit-btn:hover {
+  background-color: #20c0c0;
+}
+
+
+/* Response box */
+.response-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+
